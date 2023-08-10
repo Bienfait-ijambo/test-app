@@ -8,6 +8,12 @@ services:
       context: .
       args:
         NODE_ENV: production
+
     environment:
       - NODE_ENV=production
-    command: sh -c "npm run build && npm run prod"
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=090912
+      - POSTGRES_DB=test_app
+      - POSTGRES_DB=5432
+
+    command: sh -c "npm run prod"

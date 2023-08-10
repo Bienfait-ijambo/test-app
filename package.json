@@ -19,7 +19,7 @@
    "scripts": {
       "build": "tsc",
       "dev": "nodemon -L --exec ts-node src/infrastructure/express/index.ts",
-      "build": "node build/infrastructure/express/index.js",
+      "prod": "node build/infrastructure/express/index.js",
       "typeorm": "typeorm-ts-node-commonjs"
    }
 }

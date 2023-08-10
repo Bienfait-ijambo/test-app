@@ -15,7 +15,7 @@ services:
       - APP_NAME=test-app
 
     deploy:
-      replicas: 2
+      replicas: 1
 
   postgres:
     image: postgres:14

@@ -4,6 +4,8 @@ COPY package.json .
 
 ARG NODE_ENV
 
+# RUN npm run build
+
 RUN if [ "$NODE_ENV" = "development" ]; then \
         npm install; \
     else \

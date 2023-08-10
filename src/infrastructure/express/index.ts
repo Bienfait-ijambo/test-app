@@ -34,7 +34,7 @@ const PORT=4000
 const bootstrap=async ()=>{
 
     await initDbConnection()
-    // console.log(process.env.POSTGRES_PASSWORD)
+    console.log(process.env.POSTGRES_PASSWORD)
 
     app.listen(PORT,()=>console.log(`server is running at localhost:${PORT}`));
 }
