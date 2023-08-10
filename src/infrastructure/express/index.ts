@@ -14,10 +14,10 @@ app.get('/', function (req, res) {
 
 
   app.get('/todos', function (req, res) {
-    console.log('I get it !')
+    console.log('Amigo we dit it')
     res.send({
       id:1,
-      name:"to code"
+      name:"Amigo we dit it"
     })
   })
 
